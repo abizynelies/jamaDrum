@@ -60,4 +60,8 @@ function MakeSound(key) {
 function animate(keyflash) {
    var ani = document.querySelector("."+keyflash)
        ani.classList.add("pressed")
+    
+         setInterval(() => {
+        ani.classList.remove("pressed")
+       }, 100);
 }
